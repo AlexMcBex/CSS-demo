@@ -1,0 +1,93 @@
+* {
+    border: 1px solid white;
+  }
+  /*using * selects all the elements one the html file*/
+
+  p {
+    color: green;
+  }
+  
+  h1 {
+    color: maroon;
+  }
+  
+  .title {
+    color: teal;
+  }
+  /* .title is a CLASS selector, has priority on element selector but non on id selector*/
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  #article-title {
+    font-family: cursive;
+  }
+  /* #article-title is a ID selector, has priority on class and element selector but it must be unique in the html file and can be used only once*/
+  
+  a[href*='florence'] {
+    color: lightgreen;
+  }
+/* a[href* selects a elements with href properties with values that include "florence" in them */
+  
+  a[href*='beijing'] {
+    color: lightblue;
+  }
+  
+  a[href*='seoul'] {
+    color: lightpink;
+  }
+  
+  a:hover {
+    color:darkorange;
+  }
+  /* with a:hover a elements change color qhen the cursor hovers over them*/
+
+  
+  .heading-background {
+    background-color: aqua;
+  }
+  
+  #publish-time {
+    color: lightgray;
+  }
+  
+  h5 {
+    color: yellow;
+  }
+  
+  .author-class {
+    color: pink;
+  }
+  
+  #author-id {
+    color: cornflowerblue !important;
+  }
+  /* !important gives absolute priority to the attribute of the element over the others. It's the Jolly card, use only in extreme cases*/
+
+  h2.destination {
+    font-family: Tahoma;
+  }
+  /* this way we select only the h2 elements with the .destination class */
+  
+  .description h5 {
+    color: blueviolet;
+  }
+  /* with this we select only the h5 elements inside another element with class .description */
+  
+  li h4 {
+    color: gold;
+  }
+  /* we select like this only the <h4> inside <li> elements*/
+  
+  h4 {
+    color: dodgerblue;
+  }
+  
+  li,
+  h5 {
+    font-family: monospace;
+  }
+  /* this is a multiple selector, we select both <li> and <h5> elements separating them with a comma */
+  
+  
