@@ -6,3 +6,12 @@ body {
 h1 {
   font-size: 20px;
 }
+
+* {
+    border: 1px solid white;
+  }
+  /*using * selects all the elements one the html file*/
+
+  p {
+    color: green;
+  }
